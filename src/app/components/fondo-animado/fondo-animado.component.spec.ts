@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BannerComponent } from './banner.component';
+import { FondoAnimadoComponent } from './fondo-animado.component';
 
-describe('BannerComponent', () => {
-  let component: BannerComponent;
-  let fixture: ComponentFixture<BannerComponent>;
+describe('FondoAnimadoComponent', () => {
+  let component: FondoAnimadoComponent;
+  let fixture: ComponentFixture<FondoAnimadoComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BannerComponent ]
+      declarations: [ FondoAnimadoComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BannerComponent);
+    fixture = TestBed.createComponent(FondoAnimadoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

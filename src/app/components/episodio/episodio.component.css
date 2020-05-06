@@ -1,13 +1,16 @@
 .wrapper {
-    padding: 35px;
     display: grid;
     grid-template-columns: 400px 400px 400px;
     grid-gap: 30px;
-    background-image: url('./../../../assets/images/imagen-fondo.jpg');
+    /*background-image: url('./../../../assets/images/imagen-fondo.jpg');*/
+    background-color: transparent;
     color: whitesmoke;
     text-align: center;
   }
-    .info {
+  .info {
       text-align: center;
       color: yellow;
+  }
+  a {
+    text-decoration: none;
   }
