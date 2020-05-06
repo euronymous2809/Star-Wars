@@ -21,6 +21,7 @@
     <br>
 
     <div [ngSwitch]="movie.episode_id">
+        <img *ngSwitchCase=0 src="./../../../assets/images/title-star.png" alt="">
         <img *ngSwitchCase=1 src="./../../../assets/images/4 The Phantom Menace.jpg" alt="">
         <img *ngSwitchCase=2 src="./../../../assets/images/5 Attack of the Clones.jpg" alt="">
         <img *ngSwitchCase=3 src="./../../../assets/images/6 Revenge of the Sith.jpg" alt="">
@@ -49,7 +50,7 @@
             <br>
         </div>
         <div class='detalles'>
-            <a [routerLink]="['/episodio'+ movie.episode_id]">Ver detalle</a>
+            <a [routerLink]="['/episodio', numId]">Ver detalle</a>
         </div>
         <br><br>
     </div>
