@@ -10,10 +10,10 @@ export class SpeciesService {
         // tslint:disable-next-line: variable-name
         private _http: HttpClient
     ) {
-        this.url = 'https://swapi.co/api/';
+        this.url = 'https://swapi.py4e.com/api/';
       }
 
-    getSpecies() {
-        return this._http.get(this.url + 'species/');
+    getSpecies(especie) {
+        return this._http.get(this.url + 'species/' + especie);
     }
 }
