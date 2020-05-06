@@ -1,10 +1,11 @@
 import { ModuleWithProviders, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent } from './Components/home/home.component';
-import { PeliculasComponent } from './Components/peliculas/peliculas.component';
-import {Episodio1Component} from './Components/episodio1/episodio1.component';
-import { PageNotFoundComponent } from './Components/page-not-found/page-not-found.component';
+import { HomeComponent } from './components/home/home.component';
+import { PeliculasComponent } from './components/peliculas/peliculas.component';
+import { EpisodioComponent} from './components/episodio/episodio.component';
+import { PersonajesComponent} from './components/personajes/personajes.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 
 const appRoutes: Routes = [
@@ -21,8 +22,12 @@ const appRoutes: Routes = [
         component: PeliculasComponent
     },
     {
-        path: 'episodio1',
-        component: Episodio1Component
+        path: 'episodio',
+        component: EpisodioComponent
+    },
+    {
+        path: 'personajes',
+        component: PersonajesComponent
     },
     {
         path: '**',
